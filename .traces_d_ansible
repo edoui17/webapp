@@ -1,0 +1,161 @@
+2025-09-29 10:04:08,964 p=8162 u=deploy n=ansible INFO| {"/usr/lib/python3/dist-packages/ansible_collections": {"amazon.aws": {"version": "9.5.1"}, "ansible.netcommon": {"version": "7.2.0"}, "ansible.posix": {"version": "1.6.2"}, "ansible.utils": {"version": "5.1.2"}, "ansible.windows": {"version": "2.8.0"}, "arista.eos": {"version": "10.1.1"}, "awx.awx": {"version": "24.6.1"}, "azure.azcollection": {"version": "3.8.0"}, "check_point.mgmt": {"version": "6.5.0"}, "chocolatey.chocolatey": {"version": "1.5.3"}, "cisco.aci": {"version": "2.12.0"}, "cisco.asa": {"version": "6.1.0"}, "cisco.dnac": {"version": "6.31.3"}, "cisco.intersight": {"version": "2.3.0"}, "cisco.ios": {"version": "9.2.0"}, "cisco.iosxr": {"version": "10.3.1"}, "cisco.ise": {"version": "2.10.0"}, "cisco.meraki": {"version": "2.21.4"}, "cisco.mso": {"version": "2.11.0"}, "cisco.nxos": {"version": "9.4.0"}, "cisco.ucs": {"version": "1.16.0"}, "cloud.common": {"version": "4.2.0"}, "cloudscale_ch.cloud": {"version": "2.5.2"}, "community.aws": {"version": "9.3.0"}, "community.ciscosmb": {"version": "1.0.11"}, "community.crypto": {"version": "2.26.5"}, "community.digitalocean": {"version": "1.27.0"}, "community.dns": {"version": "3.3.3"}, "community.docker": {"version": "4.7.0"}, "community.general": {"version": "10.7.4"}, "community.grafana": {"version": "2.3.0"}, "community.hashi_vault": {"version": "6.2.1"}, "community.hrobot": {"version": "2.5.0"}, "community.library_inventory_filtering_v1": {"version": "1.1.1"}, "community.libvirt": {"version": "1.4.0"}, "community.mongodb": {"version": "1.7.10"}, "community.mysql": {"version": "3.15.0"}, "community.network": {"version": "5.1.0"}, "community.okd": {"version": "4.0.2"}, "community.postgresql": {"version": "3.14.2"}, "community.proxmox": {"version": "1.3.0"}, "community.proxysql": {"version": "1.6.0"}, "community.rabbitmq": {"version": "1.6.0"}, "community.routeros": {"version": "3.10.0"}, "community.sap_libs": {"version": "1.4.2"}, "community.sops": {"version": "2.2.2"}, "community.vmware": {"version": "5.8.0"}, "community.windows": {"version": "2.4.0"}, "community.zabbix": {"version": "3.3.0"}, "containers.podman": {"version": "1.17.0"}, "cyberark.conjur": {"version": "1.3.7"}, "cyberark.pas": {"version": "1.0.35"}, "dellemc.enterprise_sonic": {"version": "2.5.1"}, "dellemc.openmanage": {"version": "9.12.3"}, "dellemc.powerflex": {"version": "2.6.1"}, "dellemc.unity": {"version": "2.1.0"}, "f5networks.f5_modules": {"version": "1.38.0"}, "fortinet.fortimanager": {"version": "2.10.0"}, "fortinet.fortios": {"version": "2.4.0"}, "google.cloud": {"version": "1.7.0"}, "grafana.grafana": {"version": "5.7.0"}, "hetzner.hcloud": {"version": "4.3.0"}, "hitachivantara.vspone_block": {"version": "3.5.1"}, "ibm.qradar": {"version": "4.0.0"}, "ibm.spectrum_virtualize": {"version": "2.0.0"}, "ibm.storage_virtualize": {"version": "2.7.4"}, "ieisystem.inmanage": {"version": "3.0.0"}, "infinidat.infinibox": {"version": "1.6.3"}, "infoblox.nios_modules": {"version": "1.8.0"}, "inspur.ispim": {"version": "2.2.3"}, "junipernetworks.junos": {"version": "9.1.0"}, "kaytus.ksmanage": {"version": "2.0.0"}, "kubernetes.core": {"version": "5.4.0"}, "kubevirt.core": {"version": "2.2.3"}, "lowlydba.sqlserver": {"version": "2.7.0"}, "microsoft.ad": {"version": "1.9.2"}, "microsoft.iis": {"version": "1.0.3"}, "netapp.cloudmanager": {"version": "21.24.0"}, "netapp.ontap": {"version": "22.14.0"}, "netapp.storagegrid": {"version": "21.14.0"}, "netapp_eseries.santricity": {"version": "1.4.1"}, "netbox.netbox": {"version": "3.21.0"}, "ngine_io.cloudstack": {"version": "2.5.0"}, "openstack.cloud": {"version": "2.4.1"}, "ovirt.ovirt": {"version": "3.2.1"}, "purestorage.flasharray": {"version": "1.36.0"}, "purestorage.flashblade": {"version": "1.21.2"}, "ravendb.ravendb": {"version": "1.0.3"}, "sensu.sensu_go": {"version": "1.14.0"}, "splunk.es": {"version": "4.0.0"}, "telekom_mms.icinga_director": {"version": "2.4.0"}, "theforeman.foreman": {"version": "4.2.0"}, "vmware.vmware": {"version": "1.11.0"}, "vmware.vmware_rest": {"version": "4.9.0"}, "vultr.cloud": {"version": "1.13.0"}, "vyos.vyos": {"version": "5.0.0"}, "wti.remote": {"version": "1.0.10"}}}
+2025-09-29 10:04:11,092 p=8177 u=deploy n=ansible WARNING| [WARNING]: Could not match supplied host pattern, ignoring: prod
+
+2025-09-29 10:04:11,093 p=8177 u=deploy n=ansible INFO| playbook: deploy.yaml
+2025-09-29 10:04:12,762 p=8183 u=deploy n=ansible INFO| {
+    "ansible.builtin.runas": "Run As user",
+    "ansible.builtin.su": "Substitute User",
+    "ansible.builtin.sudo": "Substitute User DO",
+    "ansible.netcommon.enable": "Switch to elevated permissions on a network device",
+    "community.general.doas": "Do As user",
+    "community.general.dzdo": "Centrify's Direct Authorize",
+    "community.general.ksu": "Kerberos substitute user",
+    "community.general.machinectl": "Systemd's machinectl privilege escalation",
+    "community.general.pbrun": "PowerBroker run",
+    "community.general.pfexec": "profile based execution",
+    "community.general.pmrun": "Privilege Manager run",
+    "community.general.run0": "Systemd's run0",
+    "community.general.sesu": "CA Privileged Access Manager",
+    "community.general.sudosu": "Run tasks using sudo su -",
+    "containers.podman.podman_unshare": "Run tasks using podman unshare"
+}
+2025-09-29 10:09:29,089 p=8950 u=deploy n=ansible WARNING| [WARNING]: Unable to parse /home/deploy/webapp/hosts as an inventory source
+
+2025-09-29 10:09:29,089 p=8950 u=deploy n=ansible WARNING| [WARNING]: No inventory was parsed, only implicit localhost is available
+
+2025-09-29 10:09:29,095 p=8950 u=deploy n=ansible WARNING| [WARNING]: provided hosts list is empty, only localhost is available. Note that the implicit localhost does not match 'all'
+
+2025-09-29 10:09:29,264 p=8950 u=deploy n=ansible WARNING| [WARNING]: Could not match supplied host pattern, ignoring: prod
+
+2025-09-29 10:09:29,264 p=8950 u=deploy n=ansible INFO| PLAY [Apache installation avec Docker] *************************************************************************************************************************************************
+2025-09-29 10:09:29,264 p=8950 u=deploy n=ansible INFO| skipping: no hosts matched
+2025-09-29 10:09:29,264 p=8950 u=deploy n=ansible INFO| PLAY RECAP *****************************************************************************************************************************************************************************
+2025-09-29 10:10:54,328 p=8978 u=deploy n=ansible ERROR| ERROR! the playbook: host.yaml could not be found
+2025-09-29 10:11:04,247 p=8981 u=deploy n=ansible ERROR| ERROR! A playbook must be a list of plays, got a <class 'ansible.parsing.yaml.objects.AnsibleMapping'> instead: /home/deploy/webapp/hosts.yaml
+
+The error appears to be in '/home/deploy/webapp/hosts.yaml': line 3, column 1, but may
+be elsewhere in the file depending on the exact syntax problem.
+
+The offending line appears to be:
+
+---
+all:
+^ here
+
+2025-09-29 10:15:04,955 p=9024 u=deploy n=ansible INFO| PLAY [Apache installation avec Docker] *************************************************************************************************************************************************
+2025-09-29 10:15:05,039 p=9024 u=deploy n=ansible INFO| TASK [Gathering Facts] *****************************************************************************************************************************************************************
+2025-09-29 10:15:12,176 p=9024 u=deploy n=ansible INFO| ok: [srv-apache-1]
+2025-09-29 10:15:12,185 p=9024 u=deploy n=ansible INFO| TASK [CREATE APACHE CONTAINER] *********************************************************************************************************************************************************
+2025-09-29 10:15:13,128 p=9024 u=deploy n=ansible INFO| fatal: [srv-apache-1]: FAILED! => {"changed": false, "msg": "Error connecting: Error while fetching server API version: ('Connection aborted.', FileNotFoundError(2, 'No such file or directory'))"}
+2025-09-29 10:15:13,131 p=9024 u=deploy n=ansible INFO| PLAY RECAP *****************************************************************************************************************************************************************************
+2025-09-29 10:15:13,132 p=9024 u=deploy n=ansible INFO| srv-apache-1               : ok=1    changed=0    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+2025-09-29 10:16:20,855 p=9061 u=deploy n=ansible INFO| PLAY [Apache installation avec Docker] *************************************************************************************************************************************************
+2025-09-29 10:16:20,864 p=9061 u=deploy n=ansible INFO| TASK [Gathering Facts] *****************************************************************************************************************************************************************
+2025-09-29 10:16:22,730 p=9061 u=deploy n=ansible INFO| ok: [srv-apache-1]
+2025-09-29 10:16:22,738 p=9061 u=deploy n=ansible INFO| TASK [INSTALL DEPENDANCES DOCKER] ******************************************************************************************************************************************************
+2025-09-29 10:17:23,804 p=9061 u=deploy n=ansible INFO| fatal: [srv-apache-1]: FAILED! => {"changed": false, "msg": "Failed to lock apt for exclusive operation: Failed to lock directory /var/lib/apt/lists/: E:Could not open lock file /var/lib/apt/lists/lock - open (13: Permission denied)"}
+2025-09-29 10:17:23,807 p=9061 u=deploy n=ansible INFO| PLAY RECAP *****************************************************************************************************************************************************************************
+2025-09-29 10:17:23,808 p=9061 u=deploy n=ansible INFO| srv-apache-1               : ok=1    changed=0    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+2025-09-29 10:18:12,199 p=9116 u=deploy n=ansible INFO| PLAY [Apache installation avec Docker] *************************************************************************************************************************************************
+2025-09-29 10:18:12,208 p=9116 u=deploy n=ansible INFO| TASK [Gathering Facts] *****************************************************************************************************************************************************************
+2025-09-29 10:18:12,806 p=9116 u=deploy n=ansible INFO| fatal: [srv-apache-1]: FAILED! => {"msg": "Missing sudo password"}
+2025-09-29 10:18:12,809 p=9116 u=deploy n=ansible INFO| PLAY RECAP *****************************************************************************************************************************************************************************
+2025-09-29 10:18:12,809 p=9116 u=deploy n=ansible INFO| srv-apache-1               : ok=0    changed=0    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+2025-09-29 10:19:47,536 p=9137 u=deploy n=ansible INFO| PLAY [Apache installation avec Docker] *************************************************************************************************************************************************
+2025-09-29 10:19:47,545 p=9137 u=deploy n=ansible INFO| TASK [Gathering Facts] *****************************************************************************************************************************************************************
+2025-09-29 10:19:50,624 p=9137 u=deploy n=ansible INFO| fatal: [srv-apache-1]: FAILED! => {"msg": "Incorrect sudo password"}
+2025-09-29 10:19:50,627 p=9137 u=deploy n=ansible INFO| PLAY RECAP *****************************************************************************************************************************************************************************
+2025-09-29 10:19:50,628 p=9137 u=deploy n=ansible INFO| srv-apache-1               : ok=0    changed=0    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+2025-09-29 10:20:17,640 p=9162 u=deploy n=ansible INFO| PLAY [Apache installation avec Docker] *************************************************************************************************************************************************
+2025-09-29 10:20:17,649 p=9162 u=deploy n=ansible INFO| TASK [Gathering Facts] *****************************************************************************************************************************************************************
+2025-09-29 10:20:20,056 p=9162 u=deploy n=ansible INFO| fatal: [srv-apache-1]: FAILED! => {"msg": "Incorrect sudo password"}
+2025-09-29 10:20:20,057 p=9162 u=deploy n=ansible INFO| PLAY RECAP *****************************************************************************************************************************************************************************
+2025-09-29 10:20:20,057 p=9162 u=deploy n=ansible INFO| srv-apache-1               : ok=0    changed=0    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+2025-09-29 10:20:45,852 p=9179 u=deploy n=ansible INFO| PLAY [Apache installation avec Docker] *************************************************************************************************************************************************
+2025-09-29 10:20:45,862 p=9179 u=deploy n=ansible INFO| TASK [Gathering Facts] *****************************************************************************************************************************************************************
+2025-09-29 10:20:47,710 p=9179 u=deploy n=ansible INFO| ok: [srv-apache-1]
+2025-09-29 10:20:47,719 p=9179 u=deploy n=ansible INFO| TASK [INSTALL DEPENDANCES DOCKER] ******************************************************************************************************************************************************
+2025-09-29 10:20:59,932 p=9179 u=deploy n=ansible INFO| changed: [srv-apache-1]
+2025-09-29 10:20:59,944 p=9179 u=deploy n=ansible INFO| TASK [AJOUT CLE GPG DE DOCKER] *********************************************************************************************************************************************************
+2025-09-29 10:21:01,634 p=9179 u=deploy n=ansible INFO| changed: [srv-apache-1]
+2025-09-29 10:21:01,642 p=9179 u=deploy n=ansible INFO| TASK [AJOUT DEPOT APT DE DOCKER] *******************************************************************************************************************************************************
+2025-09-29 10:21:06,031 p=9179 u=deploy n=ansible INFO| changed: [srv-apache-1]
+2025-09-29 10:21:06,040 p=9179 u=deploy n=ansible INFO| TASK [INSTALL DOCKER] ******************************************************************************************************************************************************************
+2025-09-29 10:21:32,921 p=9179 u=deploy n=ansible INFO| changed: [srv-apache-1]
+2025-09-29 10:21:32,928 p=9179 u=deploy n=ansible INFO| TASK [DEMARRE DOCKER] ******************************************************************************************************************************************************************
+2025-09-29 10:21:33,905 p=9179 u=deploy n=ansible INFO| ok: [srv-apache-1]
+2025-09-29 10:21:33,911 p=9179 u=deploy n=ansible INFO| PLAY RECAP *****************************************************************************************************************************************************************************
+2025-09-29 10:21:33,911 p=9179 u=deploy n=ansible INFO| srv-apache-1               : ok=6    changed=4    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2025-09-29 10:22:13,913 p=9246 u=deploy n=ansible INFO| PLAY [Apache installation avec Docker] *************************************************************************************************************************************************
+2025-09-29 10:22:13,922 p=9246 u=deploy n=ansible INFO| TASK [Gathering Facts] *****************************************************************************************************************************************************************
+2025-09-29 10:22:15,801 p=9246 u=deploy n=ansible INFO| ok: [srv-apache-1]
+2025-09-29 10:22:15,810 p=9246 u=deploy n=ansible INFO| TASK [Create Apache container] *********************************************************************************************************************************************************
+2025-09-29 10:22:22,908 p=9246 u=deploy n=ansible INFO| changed: [srv-apache-1]
+2025-09-29 10:22:22,910 p=9246 u=deploy n=ansible INFO| PLAY RECAP *****************************************************************************************************************************************************************************
+2025-09-29 10:22:22,910 p=9246 u=deploy n=ansible INFO| srv-apache-1               : ok=2    changed=1    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2025-09-29 10:26:54,803 p=9379 u=deploy n=ansible INFO| PLAY [Apache installation avec Docker] *************************************************************************************************************************************************
+2025-09-29 10:26:54,813 p=9379 u=deploy n=ansible INFO| TASK [Gathering Facts] *****************************************************************************************************************************************************************
+2025-09-29 10:26:57,209 p=9379 u=deploy n=ansible INFO| ok: [srv-apache-1]
+2025-09-29 10:26:57,223 p=9379 u=deploy n=ansible INFO| TASK [INSTALL DEPENDANCES DOCKER] ******************************************************************************************************************************************************
+2025-09-29 10:27:00,294 p=9379 u=deploy n=ansible INFO| ok: [srv-apache-1]
+2025-09-29 10:27:00,304 p=9379 u=deploy n=ansible INFO| TASK [AJOUT CLE GPG DE DOCKER] *********************************************************************************************************************************************************
+2025-09-29 10:27:01,343 p=9379 u=deploy n=ansible INFO| ok: [srv-apache-1]
+2025-09-29 10:27:01,351 p=9379 u=deploy n=ansible INFO| TASK [AJOUT DEPOT APT DE DOCKER] *******************************************************************************************************************************************************
+2025-09-29 10:27:02,187 p=9379 u=deploy n=ansible INFO| ok: [srv-apache-1]
+2025-09-29 10:27:02,198 p=9379 u=deploy n=ansible INFO| TASK [INSTALL DOCKER] ******************************************************************************************************************************************************************
+2025-09-29 10:27:05,044 p=9379 u=deploy n=ansible INFO| ok: [srv-apache-1]
+2025-09-29 10:27:05,054 p=9379 u=deploy n=ansible INFO| TASK [DEMARRE DOCKER] ******************************************************************************************************************************************************************
+2025-09-29 10:27:06,030 p=9379 u=deploy n=ansible INFO| ok: [srv-apache-1]
+2025-09-29 10:27:06,035 p=9379 u=deploy n=ansible INFO| PLAY RECAP *****************************************************************************************************************************************************************************
+2025-09-29 10:27:06,035 p=9379 u=deploy n=ansible INFO| srv-apache-1               : ok=6    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2025-09-29 10:29:41,457 p=9460 u=deploy n=ansible INFO| PLAY [Apache installation avec Docker] *************************************************************************************************************************************************
+2025-09-29 10:29:41,466 p=9460 u=deploy n=ansible INFO| TASK [Gathering Facts] *****************************************************************************************************************************************************************
+2025-09-29 10:29:43,863 p=9460 u=deploy n=ansible INFO| ok: [srv-apache-1]
+2025-09-29 10:29:43,872 p=9460 u=deploy n=ansible INFO| TASK [INSTALL DEPENDANCES DOCKER] ******************************************************************************************************************************************************
+2025-09-29 10:29:46,913 p=9460 u=deploy n=ansible INFO| ok: [srv-apache-1]
+2025-09-29 10:29:46,921 p=9460 u=deploy n=ansible INFO| TASK [AJOUT CLE GPG DE DOCKER] *********************************************************************************************************************************************************
+2025-09-29 10:29:47,972 p=9460 u=deploy n=ansible INFO| ok: [srv-apache-1]
+2025-09-29 10:29:47,984 p=9460 u=deploy n=ansible INFO| TASK [AJOUT DEPOT APT DE DOCKER] *******************************************************************************************************************************************************
+2025-09-29 10:29:48,819 p=9460 u=deploy n=ansible INFO| ok: [srv-apache-1]
+2025-09-29 10:29:48,831 p=9460 u=deploy n=ansible INFO| TASK [INSTALL DOCKER] ******************************************************************************************************************************************************************
+2025-09-29 10:29:51,695 p=9460 u=deploy n=ansible INFO| ok: [srv-apache-1]
+2025-09-29 10:29:51,707 p=9460 u=deploy n=ansible INFO| TASK [DEMARRE DOCKER] ******************************************************************************************************************************************************************
+2025-09-29 10:29:52,697 p=9460 u=deploy n=ansible INFO| ok: [srv-apache-1]
+2025-09-29 10:29:52,711 p=9460 u=deploy n=ansible INFO| TASK [Create Apache container] *********************************************************************************************************************************************************
+2025-09-29 10:29:53,805 p=9460 u=deploy n=ansible INFO| ok: [srv-apache-1]
+2025-09-29 10:29:53,809 p=9460 u=deploy n=ansible INFO| PLAY RECAP *****************************************************************************************************************************************************************************
+2025-09-29 10:29:53,810 p=9460 u=deploy n=ansible INFO| srv-apache-1               : ok=7    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2025-09-29 10:42:53,995 p=9661 u=deploy n=ansible INFO| PLAY [Apache installation avec Docker] *************************************************************************************************************************************************
+2025-09-29 10:42:54,005 p=9661 u=deploy n=ansible INFO| TASK [Gathering Facts] *****************************************************************************************************************************************************************
+2025-09-29 10:43:02,874 p=9661 u=deploy n=ansible INFO| fatal: [srv-apache-1]: FAILED! => {"msg": "Incorrect sudo password"}
+2025-09-29 10:43:02,876 p=9661 u=deploy n=ansible INFO| PLAY RECAP *****************************************************************************************************************************************************************************
+2025-09-29 10:43:02,876 p=9661 u=deploy n=ansible INFO| srv-apache-1               : ok=0    changed=0    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+2025-09-29 10:43:26,209 p=9683 u=deploy n=ansible WARNING| [WARNING]: Error in vault password prompt (default): Invalid vault password was provided
+
+2025-09-29 10:43:26,209 p=9683 u=deploy n=ansible ERROR| ERROR! Invalid vault password was provided
+2025-09-29 10:44:09,573 p=9699 u=deploy n=ansible INFO| PLAY [Apache installation avec Docker] *************************************************************************************************************************************************
+2025-09-29 10:44:09,583 p=9699 u=deploy n=ansible INFO| TASK [Gathering Facts] *****************************************************************************************************************************************************************
+2025-09-29 10:44:12,568 p=9699 u=deploy n=ansible INFO| fatal: [srv-apache-1]: FAILED! => {"msg": "Incorrect sudo password"}
+2025-09-29 10:44:12,571 p=9699 u=deploy n=ansible INFO| PLAY RECAP *****************************************************************************************************************************************************************************
+2025-09-29 10:44:12,571 p=9699 u=deploy n=ansible INFO| srv-apache-1               : ok=0    changed=0    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+2025-09-29 10:45:31,493 p=9741 u=deploy n=ansible ERROR| ERROR! Decryption failed (no vault secrets were found that could decrypt) on /home/deploy/webapp/vars/secret-variables.yaml
+2025-09-29 10:49:36,260 p=9795 u=deploy n=ansible INFO| PLAY [Apache installation avec Docker] *************************************************************************************************************************************************
+2025-09-29 10:49:36,270 p=9795 u=deploy n=ansible INFO| TASK [Gathering Facts] *****************************************************************************************************************************************************************
+2025-09-29 10:49:39,996 p=9795 u=deploy n=ansible INFO| fatal: [srv-apache-1]: FAILED! => {"msg": "Incorrect sudo password"}
+2025-09-29 10:49:39,998 p=9795 u=deploy n=ansible INFO| PLAY RECAP *****************************************************************************************************************************************************************************
+2025-09-29 10:49:39,998 p=9795 u=deploy n=ansible INFO| srv-apache-1               : ok=0    changed=0    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+2025-09-29 10:50:37,810 p=9828 u=deploy n=ansible INFO| PLAY [Apache installation avec Docker] *************************************************************************************************************************************************
+2025-09-29 10:50:37,821 p=9828 u=deploy n=ansible INFO| TASK [Gathering Facts] *****************************************************************************************************************************************************************
+2025-09-29 10:50:39,702 p=9828 u=deploy n=ansible INFO| ok: [srv-apache-1]
+2025-09-29 10:50:39,710 p=9828 u=deploy n=ansible INFO| TASK [INSTALL DEPENDANCES DOCKER] ******************************************************************************************************************************************************
+2025-09-29 10:50:48,331 p=9828 u=deploy n=ansible INFO| ok: [srv-apache-1]
+2025-09-29 10:50:48,344 p=9828 u=deploy n=ansible INFO| TASK [AJOUT CLE GPG DE DOCKER] *********************************************************************************************************************************************************
+2025-09-29 10:50:53,421 p=9828 u=deploy n=ansible INFO| ok: [srv-apache-1]
+2025-09-29 10:50:53,434 p=9828 u=deploy n=ansible INFO| TASK [AJOUT DEPOT APT DE DOCKER] *******************************************************************************************************************************************************
+2025-09-29 10:50:54,260 p=9828 u=deploy n=ansible INFO| ok: [srv-apache-1]
+2025-09-29 10:50:54,275 p=9828 u=deploy n=ansible INFO| TASK [INSTALL DOCKER] ******************************************************************************************************************************************************************
+2025-09-29 10:50:57,129 p=9828 u=deploy n=ansible INFO| ok: [srv-apache-1]
+2025-09-29 10:50:57,139 p=9828 u=deploy n=ansible INFO| TASK [DEMARRE DOCKER] ******************************************************************************************************************************************************************
+2025-09-29 10:50:58,136 p=9828 u=deploy n=ansible INFO| ok: [srv-apache-1]
+2025-09-29 10:50:58,140 p=9828 u=deploy n=ansible INFO| PLAY RECAP *****************************************************************************************************************************************************************************
+2025-09-29 10:50:58,140 p=9828 u=deploy n=ansible INFO| srv-apache-1               : ok=6    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
