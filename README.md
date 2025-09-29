@@ -26,4 +26,4 @@ Voici les tâches à réaliser dans cet exercice :
 ## Référence
 - https://github.com/claude-roy/420-W45-SF_4372_E2025/blob/main/TPs/TravailPratique04.md
 
-![Resultat de la derniere commande](./TP4.png)
+![Resultat de la derniere commande](images/TP4.png)
